@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <title>BETA</title>
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Nosotros</a>
+            </li>
+            <li>
+              <a href="#">Speakers</a>
+            </li>
+            <li>
+              <a href="#">Agenda</a>
+            </li>
+            <li>
+              <a href="#">Entradas</a>
+            </li>
+            <li>
+              <a href="#">Sponsors</a>
+            </li>
+          </ul>
+          <button>Comprar Entradas</button>
+        </nav>
+        <div class="title-contador">
+          <img src="./img/summit.png" alt="" />
+          <h1>Transformación Digital</h1>
+          <h2>Lima | 28 - 29 Nov</h2>
+          <div class="contador"></div>
+        </div>
+        <div class="mouse">
+          <img src="./img/mouse@2x.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <div class="nosotros">
+      <h3>Nosotros</h3>
+      <div class="text-nosotros">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      </div>
+    </div>
+    <div class="Speakers">
+      <h3>Speakers</h3>
+      <div class="slide">
+        <div>
+          <img src="./img/slideIMG.png" alt="" />
+          <div class="text-circle">
+            <h3>Lesli Caballero 1</h3>
+            <p>UX & Design Coach en BBVA</p>
+          </div>
+        </div>
+        <div>
+          <img src="./img/slideIMG.png" alt="" />
+          <div class="text-circle">
+            <h3>Lesli Caballero 2</h3>
+            <p>UX & Design Coach en BBVA</p>
+          </div>
+        </div>
+        <div>
+          <img src="./img/slideIMG.png" alt="" />
+          <div class="text-circle">
+            <h3>Lesli Caballero 3</h3>
+            <p>UX & Design Coach en BBVA</p>
+          </div>
+        </div>
+        <div>
+          <img src="./img/slideIMG.png" alt="" />
+          <div class="text-circle">
+            <h3>Lesli Caballero 4</h3>
+            <p>UX & Design Coach en BBVA</p>
+          </div>
+        </div>
+        <div>
+          <img src="./img/slideIMG.png" alt="" />
+          <div class="text-circle">
+            <h3>Lesli Caballero 5</h3>
+            <p>UX & Design Coach en BBVA</p>
+          </div>
+        </div>
+        <div>
+          <img src="./img/slideIMG.png" alt="" />
+          <div class="text-circle">
+            <h3>Lesli Caballero 6</h3>
+            <p>UX & Design Coach en BBVA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(".slide").slick({
+      centerMode: true,
+      //   centerPadding: "60px",
+      slidesToShow: 5,
+      //   infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: false,
+      nextArrow: false,
+      variableWidth: true,
+      easing: "easeOutElastic",
+      //   cssEase: "linear",
+      speed: 1500
+    });
+  </script>
+</html>
