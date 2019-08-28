@@ -9,9 +9,20 @@ header {
   width: 100%;
   height: 120vh;
   background-size: 100%;
-  background-image: url(./img/fondo_1.png);
+  background-image: url(./img/fondo.png);
   background-position: top;
   background-repeat: no-repeat;
+  min-height: 936px;
+}
+
+.background-particulas {
+  width: 100%;
+  height: 535px;
+  padding-top: 85px;
+  background-image: url(./img/particulas.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 100% auto;
 }
 
 header .content {
@@ -20,6 +31,7 @@ header .content {
   margin: auto;
   padding-top: 45px;
   position: relative;
+  max-width: 1200px;
 }
 
 header .content .mouse {
@@ -66,10 +78,8 @@ header .content nav button {
   color: white;
   font-size: 14px;
   font-weight: 400;
-}
-
-header .content .title-contador {
-  margin-top: 85px;
+  border: none;
+  outline: none;
 }
 
 header .content .title-contador img {
@@ -136,92 +146,213 @@ header .content .title-contador .contador {
 }
 
 .Speakers {
-  width: 960px;
+  width: 1100px;
   margin: auto;
   margin-top: 93px;
   height: 450px;
 }
-
-.slide div img {
+/* ------------------------- slide ------------------ */
+.slide {
   width: 100%;
   margin: auto;
-  opacity: 0.7;
-  transition: 1s;
-}
-
-.slick-slide {
-  margin: 0 20px;
-  text-align: center;
-}
-/* the parent */
-.slick-list {
-  /* margin: 0 -50px; */
-}
-
-/* .slick-current img {
-  width: 244px !important;
-  margin: auto;
-  opacity: 1 !important;
-  transition: 1s;
-  margin-right: 20px;
-} */
-.slick-current {
-  opacity: 1;
-}
-
-.slick-current .text-circle {
-  display: block !important;
 }
 
 .slick-track {
-  display: flex !important;
-  align-items: center !important;
+  height: 350px;
 }
 
-.text-circle {
+.slide .box {
+  width: 220px;
+  height: 100%;
+  /* border: 1px solid black; */
+  /* background: black; */
+  /* margin-right: 10px; */
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  /* margin-left: 10px; */
+}
+
+.slide .box h3 {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 20px;
   display: none;
 }
 
-.text-circle h3 {
-  color: #16083a;
-  font-size: 20px;
-  font-weight: 400;
-  margin: 0;
-  text-align: center;
-  margin-top: 25px;
+.slide .box p {
+  display: none;
 }
 
-.text-circle p {
-  color: #838383;
-  font-family: Ubuntu;
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0;
-  text-align: center;
-  width: 150px;
+.slide .box img {
   margin: auto;
-  margin-top: 13px;
 }
-.slick-active {
-  width: 97px !important;
-  opacity: 0.7;
+
+.slide .box .center {
+  font-size: 15px;
+  margin: auto;
 }
-.slick-active + .slick-active {
-  width: 152px !important;
-  opacity: 0.7;
+
+.slick-current .center h3 {
+  display: block !important;
 }
-.slick-active + .slick-active + .slick-active {
+
+.slick-current .center p {
+  display: block !important;
+}
+
+.slick-current .center img {
   width: 244px !important;
-  /* margin: auto; */
+}
+
+.slick-active img {
+  width: 152px;
+  transition: 1s;
+  /* opacity: 0.7; */
+}
+.slick-active + .slick-active img {
+  width: 152px !important;
+  transition: 1s;
+}
+.slick-active + .slick-active + .slick-active img {
+  width: 220px !important;
+
   opacity: 1 !important;
   transition: 1s;
 }
 
-.slick-active + .slick-active + .slick-active + .slick-active {
+.slick-active + .slick-active + .slick-active + .slick-active img {
   width: 152px !important;
   opacity: 0.7;
+  transition: 1s;
 }
-.slick-active + .slick-active + .slick-active + .slick-active + .slick-active {
-  width: 97px !important;
+.slick-active + .slick-active + .slick-active + .slick-active + .slick-active img {
+  width: 152px !important;
   opacity: 0.7;
+  transition: 1s;
+}
+/* ------------------------- slide fin ------------------ */
+
+.agenda {
+  width: 100%;
+  height: 100vh;
+  background-image: url("img/Fondo_2.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0px;
+}
+
+.agenda h3 {
+  color: #16083a;
+  font-size: 45px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.table {
+  width: 650px;
+  height: 400px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 8px;
+}
+
+.tr-header {
+  height: 40px;
+  border-radius: 9px;
+  background-color: #16083a;
+  color: #fff;
+  border-radius: 0px 9px 9px 0px;
+}
+
+.tr-header th {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.cabesera {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: #16083a;
+  color: #fff;
+  border-radius: 9px 0px 0px 9px;
+}
+
+.date-table {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background: white;
+}
+
+.date-table p {
+  transform: rotate(-90deg);
+  color: #ff3f44;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+table tbody tr td {
+  text-align: center;
+  height: 20px;
+  color: #838383;
+  font-size: 14px;
+  font-weight: 400;
+  height: 42px;
+}
+
+tbody {
+  background: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.table-button {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.button-agenda {
+  width: 47px;
+  height: 40px;
+  border-radius: 19px;
+  background-color: #16083a;
+  margin-left: 16px;
+  color: white;
+  border: none;
+  font-size: 32px;
+  outline: none;
+}
+
+.agenda .close {
+  height: 40px;
+  overflow: hidden;
+}
+
+.mas.close {
+  display: none;
+}
+
+.menos.close {
+  display: none;
 }
