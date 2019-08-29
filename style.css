@@ -233,12 +233,31 @@ header .content .title-contador .contador {
 }
 /* ------------------------- slide fin ------------------ */
 
-.agenda {
+.agenda-containter {
   width: 100%;
   height: 100vh;
-  background-image: url("img/Fondo_2.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+}
+
+.entradas-containter {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background: peru; */
+}
+
+.center-container h3 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.agenda {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -355,4 +374,154 @@ tbody {
 
 .menos.close {
   display: none;
+}
+
+/* -------------------ENTRADAS------------------------ */
+
+.entradas-containter .center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entradas {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/Fondo_3.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.background-two {
+  width: 100%;
+  height: 200vh;
+  background-image: url(./img/two_background.png);
+  background-size: 100% 100%;
+}
+
+.row-preci {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item-preci {
+  width: 170px;
+  text-align: center;
+}
+.item-preci h5 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+
+.item-preci .box {
+  width: 170px;
+  height: 125px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 7px;
+  margin-top: 11px;
+  padding: 0px 20px;
+}
+
+.activity {
+  width: 218px;
+}
+
+.activity .box {
+  border: none;
+  width: 218px;
+  height: 161px;
+  background-image: linear-gradient(137deg, #ec383c 0%, #ff676a 100%);
+}
+
+.box h2 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 400;
+  margin-top: 22px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  margin-bottom: 8px;
+}
+
+.item-preci .box p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.item-preci .box p span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.activity .box h2 {
+  font-size: 51px;
+  font-weight: 400;
+}
+
+.activity .box p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.activity .box p span {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.activity .box {
+  padding-top: 3px;
+}
+
+.shop-pass {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 400;
+  padding: 8px 25px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  margin-top: 85px;
+}
+
+/* -----------------SPONSORS---------------- */
+
+.sponsors {
+  width: 100%;
+  height: 100vh;
+}
+
+.sponsors h3 {
+  text-align: center;
+  color: #16083a;
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: 90px;
+  margin-bottom: 55px;
+}
+
+.row-sponsor {
+  width: 690px;
+  margin: auto;
+  margin-top: 55px;
+}
+
+.row-sponsor h4 {
+  color: #9b9b9b;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.row-logos {
+  margin-top: 20px;
+  border-top: 2px solid #e53967;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
